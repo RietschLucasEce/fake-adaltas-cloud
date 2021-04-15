@@ -18,13 +18,14 @@ export default function Dashboard({ data }) {
             <Link to={node.fields.slug} style={{ textDecoration: 'none', color: 'inherit' }} >
               <div key={node.id} style={
                 { 
-                  boxShadow: '1px 1px 30px 0 #000', padding: '20px 20px 20px 20px', 
+                  boxShadow: '1px 1px 30px 0 #555', padding: '20px 20px 20px 20px', 
                   marginBottom: '30px',
-                  backdropFilter: 'blur(0.3em)'
+                  backdropFilter: 'blur(1em)'
                 }
-              }>            <h3
+              }>            
+                <h3
                   css={css`
-                    margin-bottom: ${rhythm(1 / 4)};
+                    margin-bottom: 20px;
                   `}
                 >
                   {node.frontmatter.title}{" "}

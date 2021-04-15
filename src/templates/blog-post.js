@@ -7,6 +7,7 @@ export default function BlogPost({ data }) {
   return (
     <Layout>
       <div>
+        <h4 style={{color: '#555', fontStyle: 'italic'}}>{post.frontmatter.section}</h4>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -19,6 +20,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        section
       }
     }
   }

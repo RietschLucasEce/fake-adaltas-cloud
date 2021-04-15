@@ -17,7 +17,7 @@ export default function CenteredGrid({children}) {
 
   return (
     <div className={classes.root}>
-        <Grid item xs={6}>
+        <Grid item xs={3}>
           {children}
         </Grid>
     </div>

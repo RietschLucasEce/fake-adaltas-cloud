@@ -1,0 +1,1 @@
+module.exports = require("/home/lucasrietsch/Desktop/fake-adaltas-cloud/src/utils/typography")

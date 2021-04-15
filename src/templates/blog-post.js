@@ -7,7 +7,7 @@ export default function BlogPost({ data }) {
   return (
     <Layout>
       <div>
-        <h1>{post.frontmatter.title}</h1>
+        <h1  style={{color:'white'}}>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>

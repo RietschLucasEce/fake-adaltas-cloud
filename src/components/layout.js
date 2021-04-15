@@ -1,8 +1,8 @@
 import React from "react"
 import { css } from "@emotion/react"
 import { useStaticQuery, Link, graphql } from "gatsby"
-
 import { rhythm } from "../utils/typography"
+import background from "../assets/sky.jpg";
 
 export default function Layout({ children }) {
   const data = useStaticQuery(
@@ -18,12 +18,13 @@ export default function Layout({ children }) {
   )
   return (
     <div
-      style={css`
-        margin: 0 auto;
-        max-width: 700px;
-        padding: ${rhythm(2)};
-        padding-top: ${rhythm(1.5)};
-      `}
+      style={
+        { 
+          width: `100%`, minHeight: `100VH`, color: 'white', 
+          backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundPosition: 'bottom',
+          padding: '70px 70px 20px 120px'
+        }
+      }
     >
       <Link to={`/`}>
         <h3
@@ -31,6 +32,7 @@ export default function Layout({ children }) {
             margin-bottom: ${rhythm(2)};
             display: inline-block;
             font-style: normal;
+            color: white;
           `}
         >
           {data.site.siteMetadata.title}

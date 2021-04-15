@@ -15,7 +15,6 @@ This is a simple replica of the website adaltas.cloud using gatsby.
 1.  **Install Gatsby.**
 
     Use the Gatsby Tutorial to install gatbsy and set up your development environement.
-    
     https://www.gatsbyjs.com/docs/tutorial/part-zero/
     
 1.  **Create a Gatsby site.**
@@ -25,7 +24,7 @@ This is a simple replica of the website adaltas.cloud using gatsby.
     ```shell
     # create a new Gatsby site using the hello-world starter
     gatsby new my-fake-adaltas-website https://github.com/RietschLucasEce/fake-adaltas-cloud.git
-    ``
+    ```
 
 1.  **Start developing.**
 

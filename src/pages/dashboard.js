@@ -47,7 +47,7 @@ export default function Dashboard({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___section], order: ASC }) {
       totalCount
       edges {
         node {

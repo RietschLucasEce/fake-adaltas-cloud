@@ -10,14 +10,13 @@ export default function Home({ data }) {
         <h1
           css={css`
             display: inline-block;
-            color: white;
           `}
         >
           Welcome !
         </h1>
-        <h4 style={{ color: 'white' }}>Please sign in to access the files</h4>
+        <h4>Please sign in to access the files</h4>
         <Link to={`/dashboard`}>
-        <h5 style={{ padding: '10px 50px 10px 50px', border: 'solid', display: 'inline-block', color: 'white' }}>
+        <h5 style={{ padding: '10px 50px 10px 50px', border: 'solid', display: 'inline-block'}}>
           Sign in
         </h5>
       </Link>

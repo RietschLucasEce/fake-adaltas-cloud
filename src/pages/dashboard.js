@@ -8,11 +8,11 @@ import { rhythm } from "../utils/typography"
 export default function Dashboard({ data }) {
   return (
     <Layout>
-      <h1 style={{color:'white'}}>Dashboad</h1>
-      <p style={{color:'white'}}>
+      <h1>Dashboad</h1>
+      <p>
         This is a fake adaltas.cloud replica implemented on gatsby.
       </p>
-      <h4 style={{color:'white'}}>{data.allMarkdownRemark.totalCount} Posts</h4>
+      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <CenteredGrid style={{ width: '40%'}} >
             <Link to={node.fields.slug} style={{ textDecoration: 'none', color: 'inherit' }} >
@@ -25,7 +25,6 @@ export default function Dashboard({ data }) {
               }>            <h3
                   css={css`
                     margin-bottom: ${rhythm(1 / 4)};
-                    color: white;
                   `}
                 >
                   {node.frontmatter.title}{" "}
@@ -34,7 +33,7 @@ export default function Dashboard({ data }) {
                       color: #555;
                     `}
                   >
-                    — {node.frontmatter.date}
+                    — {node.frontmatter.section}
                   </span>
                 </h3>
                 <p>{node.excerpt}</p>
@@ -56,6 +55,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            section
           }
           fields {
             slug

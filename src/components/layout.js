@@ -20,7 +20,7 @@ export default function Layout({ children }) {
     <div
       style={
         { 
-          width: `100%`, minHeight: `100VH`, color: 'white', 
+          width: `100%`, minHeight: `100VH`,
           backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundPosition: 'bottom',
           padding: '70px 70px 20px 120px'
         }
@@ -32,7 +32,6 @@ export default function Layout({ children }) {
             margin-bottom: ${rhythm(2)};
             display: inline-block;
             font-style: normal;
-            color: white;
           `}
         >
           {data.site.siteMetadata.title}
